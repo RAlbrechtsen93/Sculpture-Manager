@@ -30,5 +30,12 @@ namespace SculptureManagerV6.Handler
             //SculptureViewModel.NewSculpture.C_Name = "";
             //SculptureViewModel.NewSculpture.C_Location = "";
         }
+
+        public void DeleteSculpture()
+        {
+            int deletesculptureid = SculptureViewModel.NewSculpture.C_SculptureID;
+
+            SculptureViewModel.SculptureCatalogSingleton.Sculptures.Clear();
+        }
     }
 }

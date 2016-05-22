@@ -29,6 +29,7 @@ namespace SculptureManagerV6.ViewModel
         public SculptureCatalogSingleton SculptureCatalogSingleton { get; set; }
         public SculptureHandler SculptureHandler { get; set; }
         public ICommand CreateCommand { get; set; }
+        public ICommand DeleteCommand { get; set; }
 
 
         public SculptureViewModel()
@@ -38,6 +39,7 @@ namespace SculptureManagerV6.ViewModel
 
             SculptureHandler = new Handler.SculptureHandler(this);
             CreateCommand = new RelayCommand(SculptureHandler.CreateSculpture);
+            DeleteCommand = new RelayCommand(SculptureHandler.DeleteSculpture);
             NewSculpture = new Sculpture();
 
 

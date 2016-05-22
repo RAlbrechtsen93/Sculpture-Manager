@@ -13,10 +13,10 @@
     </Page.DataContext>
 
     <Grid Background="DarkGray">
-        <ListView x:Name="listView" HorizontalAlignment="Left" Height="325" VerticalAlignment="Top" Width="478" Margin="163,112,0,0" CanDragItems="True" CanReorderItems="True" ItemsSource="{Binding SculptureCatalogSingleton.Sculptures}"/>
+        <ListView x:Name="listView" HorizontalAlignment="Left" Height="259" VerticalAlignment="Top" Width="478" Margin="163,112,0,0" CanDragItems="True" CanReorderItems="True" ItemsSource="{Binding SculptureCatalogSingleton.Sculptures}" AutomationProperties.AccessibilityView="Content"/>
 
         <Button x:Name="button" Content="Create" Margin="738,339,0,349" Width="110" Command="{Binding CreateCommand}" />
-        <Button x:Name="button1" Content="Delete" Margin="861,339,0,349" Width="110"/>
+        <Button x:Name="button1" Content="Delete" Margin="861,339,0,349" Width="110" Command="{Binding DeleteCommand}"/>
         <Button x:Name="button2" Content="Details" Margin="983,339,0,349" Width="110"/>
         <Button x:Name="button3" Content="Edit" Margin="1103,339,0,349" Width="110" />
 
